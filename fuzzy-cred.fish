@@ -13,7 +13,7 @@ function ssf
     # |- Use the CSV file template provided
     # v
     set filePath "/change/path/here"
-    set getCSV (awk -F',' '!/^$|^#/ {print $1","$2","$3","$4","$5","$1" ("$2"@"$3")"}' $filePath | fzf --with-nth 6 --delimiter ,)
+    set getCSV (awk -F',' '!/^$|^#/ {print $1","$2","$3","$4","$5","$1" ("$2"@"$3")"}' $filePath | fzf -e --with-nth 6 --delimiter ,)
     # set title (echo $getCSV | awk -F',' '{printf "%s (%s@%s)\n", $1, $2, $3}')
     
     if test -n "$getCSV"
@@ -42,7 +42,7 @@ function sff
     # |
     # v
     set filePath "/change/path/here"
-    set getCSV (awk -F',' '!/^$|^#/ {print $1","$2","$3","$4","$5","$1" ("$2"@"$3")"}' $filePath | fzf --with-nth 6 --delimiter ,)
+    set getCSV (awk -F',' '!/^$|^#/ {print $1","$2","$3","$4","$5","$1" ("$2"@"$3")"}' $filePath | fzf -e --with-nth 6 --delimiter ,)
     # set title (echo $getCSV | awk -F',' '{printf "%s (%s@%s)\n", $1, $2, $3}')
     
     if test -n "$getCSV"
