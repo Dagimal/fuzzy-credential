@@ -10,4 +10,4 @@ Credential Manager using fuzzy finder (fzf) and sshpass 🔑
 ` ~/.config/fish/conf.d/ `
 
 - reload / sourcing file :
-` . ~/.config/fish/functions/fuzzy-cred.fish `
+` . ~/.config/fish/conf.d/fuzzy-cred.fish `
