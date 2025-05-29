@@ -7,7 +7,7 @@ Credential Manager using fuzzy finder (fzf) and sshpass 🔑
 
 ## Install
 - copy fuzzy-cred.fish file to : 
-` ~/.config/fish/functions/ `
+` ~/.config/fish/conf.d/ `
 
 - reload / sourcing file :
 ` . ~/.config/fish/functions/fuzzy-cred.fish `
